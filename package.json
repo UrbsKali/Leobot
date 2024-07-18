@@ -1,0 +1,28 @@
+{
+  "name": "leobot",
+  "version": "1.0.0",
+  "description": "The bot for the ESILV Discord server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint . --fix",
+    "config": "node config.mjs",
+    "deploy": "node ./deploy/deploy.js",
+    "deploy-dev": "node ./deploy/deploy-dev.js",
+    "purge-dev": "node ./deploy/purge-dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deasync": "^0.1.28",
+    "discord.js": "^14.7.1",
+    "google-auth-library": "^8.7.0",
+    "googleapis": "^112.0.0",
+    "inquirer": "^9.1.4",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  }
+}
